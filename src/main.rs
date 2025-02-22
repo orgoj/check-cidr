@@ -1,3 +1,6 @@
+// Copyright (c) 2025 Michael Heca <michael@heca.net>
+// Licensed under the MIT License
+
 use clap::Parser;
 use ipnetwork::{IpNetwork, Ipv4Network, Ipv6Network};
 use std::fs::File;
