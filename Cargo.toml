@@ -2,7 +2,15 @@
 name = "check-cidr"
 version = "0.1.0"
 edition = "2024"
+authors = ["Michael Heca <michael@heca.net>"]
+description = "A simple Rust program that checks whether a given IP or CIDR is contained within a rule loaded from a file. The rule file contains one IP/CIDR per line. Empty lines and lines starting with `#`, as well as any text following the first IP/CIDR on a line, are ignored."
+license = "MIT"
 
 [dependencies]
 clap = { version = "4", features = ["derive"] }
 ipnetwork = "0.18"
+
+[profile.release]
+strip = true
+debug = false
+opt-level = "s"
