@@ -9,6 +9,7 @@ license = "MIT"
 [dependencies]
 clap = { version = "4", features = ["derive"] }
 ipnetwork = "0.18"
+thiserror = "2.0"
 
 [profile.release]
 strip = true
